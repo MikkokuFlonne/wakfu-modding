@@ -7,6 +7,11 @@ body{
     padding: 0;
     .container{
         header{
+            background-color: #46c1f6;
+            h1{
+            margin: 0 20px;
+            }
+
             nav{
                 display: flex;
                 ul{
@@ -35,6 +40,160 @@ body{
                             }
                         }
                     }
+                }
+            }
+        }
+        footer{
+            background: linear-gradient(315deg, #051d3d, #7e9cbe);
+            display: flex;
+            >div{
+                margin: 0 20px;
+                &.reseaux_sociaux {
+                    padding: 0;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    color: gray;
+                    h3{
+                        margin: 0;
+                        margin-left: 10px;
+                        padding: 0;
+                        font-size: 1.2em;
+                        color: rgba(255, 255, 255, 0.747);
+                    }
+                    .wrapper{
+                        font-family: "Poppins", sans-serif;
+                        display: inline-flex;
+                        div{
+                            a{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 10px;
+                                color: black;
+                                font-size: 1em;
+                                text-decoration: none;
+                                >p{
+                                    margin: 0;
+                                    color: white;
+                                }
+                                .icon{
+                                    position: relative;
+                                    background-color: #ffffff;
+                                    border-radius: 50%;
+                                    padding: 15px;
+                                    margin: 5px;
+                                    width: 10px;
+                                    height: 10px;
+                                    font-size: 18px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                                    cursor: pointer;
+                                    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                                    &:hover{
+                                        .tooltip {
+                                            top: -45px;
+                                            opacity: 1;
+                                            visibility: visible;
+                                            pointer-events: auto;
+                                            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+                                        }
+                                        span{
+                                            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+                                        }
+                                    } 
+                                }
+                                .tooltip {
+                                    position: absolute;
+                                    top: 0;
+                                    font-size: 14px;
+                                    background-color: #ffffff;
+                                    color: #ffffff;
+                                    padding: 5px 8px;
+                                    border-radius: 5px;
+                                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                                    opacity: 0;
+                                    pointer-events: none;
+                                    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                                    &:before {
+                                        position: absolute;
+                                        content: "";
+                                        height: 8px;
+                                        width: 8px;
+                                        background-color: #ffffff;
+                                        bottom: -3px;
+                                        left: 50%;
+                                        transform: translate(-50%) rotate(45deg);
+                                        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                                    }
+                                }
+                                .twitter{
+                                    background-color: #46c1f6;
+                                    color: #ffffff;
+                                    &:hover{
+                                        .tooltip{
+                                            background-color: #46c1f6;
+                                            color: #ffffff;
+                                            &::before{
+                                                background-color: #46c1f6;
+                                                color: #ffffff;
+                                            }
+                                        }
+                                    }
+                                }
+                                .github{
+                                    background-color: black;
+                                    color: #ffffff;
+                                    &:hover{
+                                        .tooltip{
+                                            background-color: black;
+                                            color: #ffffff;
+                                            &::before{
+                                                background-color: black;
+                                                color: #ffffff;
+                                            }
+                                        }
+                                    }
+                                }
+                                .discord{
+                                    background-color: #7289da;
+                                    color: #ffffff;
+                                    &:hover{
+                                        .tooltip{
+                                            background-color: #7289da;
+                                            color: #ffffff;
+                                            &::before{
+                                                background-color: #7289da;
+                                                color: #ffffff;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                &.copyright{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    width: 75%;
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        height: 30px;
+                        font-size: 1em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
                 }
             }
         }

@@ -11,8 +11,6 @@ body {
                     align-content: space-around;
                     flex-wrap: wrap;
                     background-color: white;
-                    margin-top: 20px;
-
                     h2{
                         font-size: 2em;
                         text-align: center;
@@ -21,6 +19,7 @@ body {
                         display: flex;
                         justify-content: center;
                         flex-wrap: wrap;
+                        margin: 20px 0;
                         fieldset{
                             legend{
                                 padding: 10px;
@@ -44,7 +43,7 @@ body {
                             height: 40px;
                             font-size: 1.5em;
                             border-radius: 15px;
-                            margin: 0 20px;
+                            margin: 20px;
                             padding: 0 10px;
                             color: cornflowerblue;
                             background-color: darkblue;
