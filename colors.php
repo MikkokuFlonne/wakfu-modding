@@ -25,7 +25,9 @@ if (!empty($_POST)) {
 
             $couleur = $simplexml->addChild('color');
             $couleur->addAttribute('id', $index);
-            $couleur->addAttribute('color', $hexa["hexacode"] . sprintf("%02X", (intval($hexa["alpha"]) * 255)));
+            $xmlcolor = $hexa["hexacode"];
+            $xmlcolor .= sprintf("%02X", (intval($hexa["alpha"]) * 255));
+            $couleur->addAttribute('color',$xmlcolor);
         }
         file_put_contents('colors.xml', $simplexml->asXML());
     } else if (isset($_POST['default'])) {

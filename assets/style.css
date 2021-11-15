@@ -31,14 +31,11 @@ body .container header nav ul li a {
   font-size: 2em;
   text-decoration: none;
   border-bottom: 2px solid #7dc6d8;
+  color: #013441;
 }
 body .container header nav ul li a:visited {
   text-decoration: none;
-  color: #8ac7d6;
-}
-body .container header nav ul li a:hover {
-  color: #4191a5;
-  border-color: #4191a5;
+  color: #013441;
 }
 body .container footer {
   background: linear-gradient(315deg, #051d3d, #7e9cbe);
