@@ -1,0 +1,57 @@
+body .container main {
+  display: flex;
+  justify-content: center;
+}
+body .container main section#colors {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-top: 20px;
+}
+body .container main section#colors h2 {
+  font-size: 2em;
+  text-align: center;
+}
+body .container main section#colors form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .container main section#colors form fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  width: 25%;
+}
+body .container main section#colors form fieldset legend {
+  padding: 10px;
+}
+body .container main section#colors form fieldset div.color-sample {
+  width: 200px;
+  height: 150px;
+  box-shadow: 10px 10px 5px grey;
+  margin: 20px 0;
+}
+body .container main section#colors form button {
+  height: 40px;
+  font-size: 1.5em;
+  border-radius: 15px;
+  margin: 0 20px;
+  padding: 0 10px;
+  color: cornflowerblue;
+  background-color: darkblue;
+}
+body .container main section#colors form button:last-child {
+  color: #cbdbb3;
+  background-color: #0f380f;
+}
+body .container main section#colors form button:hover {
+  transform: scale(110%);
+}
+
+/*# sourceMappingURL=colors.css.map */

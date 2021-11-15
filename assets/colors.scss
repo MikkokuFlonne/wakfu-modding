@@ -1,0 +1,67 @@
+body {
+    .container{
+        main{
+            display: flex;
+            justify-content: center;
+            section{
+                &#colors{
+                    display: flex;
+                    width: 80%;
+                    flex-direction: column;
+                    align-content: space-around;
+                    flex-wrap: wrap;
+                    background-color: white;
+                    margin-top: 20px;
+
+                    h2{
+                        font-size: 2em;
+                        text-align: center;
+                    }
+                    form{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        fieldset{
+                            legend{
+                                padding: 10px;
+                            }
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            margin: 10px;
+                            width: 25%;
+                            div{
+                                &.color-sample{
+                                    width: 200px;
+                                    height: 150px;
+                                    box-shadow: 10px 10px 5px grey;
+                                    margin: 20px 0;                             
+                                }
+                            }
+                        }
+                        button{
+                            height: 40px;
+                            font-size: 1.5em;
+                            border-radius: 15px;
+                            margin: 0 20px;
+                            padding: 0 10px;
+                            color: cornflowerblue;
+                            background-color: darkblue;
+                            
+                            &:last-child{
+                                color: rgb(203, 219, 179);
+                                background-color: rgb(15, 56, 15);
+                            }
+                            &:hover{
+                                transform: scale(110%);
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
