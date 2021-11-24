@@ -5,3 +5,9 @@ Pour celà il fallait modifier les png fournis par Ankama pour ceux qui ont des 
 L'autre option consiste à modifier certaines des couleurs utilisées en jeu, mais le processus pour le faire est long et peut s'avérer rebutant pour une personne n'ayant pas les connaissances.
 
 C'est pour cette raison que j'ai décidé de développer ces outils, pour faciliter et rendre accessible le modding d'interface de Wakfu.
+
+#Dependencies
+
+Composer autoload (https://getcomposer.org/doc/00-intro.md)
+et Symfony dumper (https://symfony.com/doc/current/components/var_dumper.html)
+(ou alors supprimer les 3 première lgnes dans partials/header)
