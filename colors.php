@@ -18,6 +18,8 @@ if (!empty($_POST)) {
 
     if (isset($_POST['xml'])) {
         foreach ($_POST as $index => $hexa) {
+            if ($index == "xml")
+                continue;
             // dump($hexa);
             // dump($hexa['hexacode']);
             // // dump($hexa['alpha']);
