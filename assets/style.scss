@@ -5,7 +5,11 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     .container{
+        display: flex;
+        flex-direction: column;
         header{
             background-color: #46c1f6;
             h1{
@@ -35,6 +39,9 @@ body{
                                 color: rgb(1, 52, 65);
 
                             }
+                            &:hover{
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -63,10 +70,12 @@ body{
                         font-family: "Poppins", sans-serif;
                         display: inline-flex;
                         div{
+                            display: flex;
+                            justify-content: end;
                             a{
                                 display: flex;
                                 flex-direction: column;
-                                justify-content: center;
+                                justify-content: flex-end;
                                 align-items: center;
                                 margin: 10px;
                                 color: black;

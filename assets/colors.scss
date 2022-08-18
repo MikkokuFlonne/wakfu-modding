@@ -39,21 +39,47 @@ body {
                                 }
                             }
                         }
-                        button{
-                            height: 40px;
-                            font-size: 1.5em;
-                            border-radius: 15px;
-                            margin: 20px;
-                            padding: 0 10px;
-                            color: cornflowerblue;
-                            background-color: darkblue;
-                            
-                            &:last-child{
-                                color: rgb(203, 219, 179);
-                                background-color: rgb(15, 56, 15);
-                            }
-                            &:hover{
-                                transform: scale(110%);
+                        div{
+                            &.button{
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin: 40px 0;
+                                button{
+                                    height: 40px;
+                                    font-size: 1.5em;
+                                    border-radius: 15px;
+                                    margin: 20px;
+                                    padding: 0 10px;
+                                    color: cornflowerblue;
+                                    background-color: rgb(10, 20, 125);
+                                    
+                                    &:last-child{
+                                        color: rgb(203, 219, 179);
+                                        background-color: rgb(15, 56, 15);
+                                    }
+                                    &:hover{
+                                        transform: scale(110%);
+                                    }
+                                    &.reset{
+                                        background-color: white;
+                                        color: black;
+                                        height: 50px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        i{
+                                            transform: rotate(-90deg);
+                                        }
+                                        &:hover{
+                                            cursor: pointer;
+                                            transform: scale(105%);
+                                            i{
+                                                transition-timing-function: ease-in;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

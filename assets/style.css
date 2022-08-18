@@ -4,6 +4,12 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
 }
 body .container header {
   background-color: #46c1f6;
@@ -37,6 +43,9 @@ body .container header nav ul li a:visited {
   text-decoration: none;
   color: #013441;
 }
+body .container header nav ul li a:hover {
+  cursor: pointer;
+}
 body .container footer {
   background: linear-gradient(315deg, #051d3d, #7e9cbe);
   display: flex;
@@ -63,10 +72,14 @@ body .container footer > div.reseaux_sociaux .wrapper {
   font-family: "Poppins", sans-serif;
   display: inline-flex;
 }
+body .container footer > div.reseaux_sociaux .wrapper div {
+  display: flex;
+  justify-content: end;
+}
 body .container footer > div.reseaux_sociaux .wrapper div a {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin: 10px;
   color: black;

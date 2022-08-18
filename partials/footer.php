@@ -1,7 +1,7 @@
 
 <footer>
 <div class="copyright">
-<p>Website created by MikkokuFlonne <i class="far fa-copyright"></i></p>
+<p>Website created by MikkokuFlonne<i class="far fa-copyright"></i></p>
 </div>
     <div class="reseaux_sociaux">
                 <h3>Mes réseaux sociaux</h3>
@@ -43,6 +43,7 @@
 </footer>
 
 </div>
+<script src="https://kit.fontawesome.com/bedc8cf35d.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

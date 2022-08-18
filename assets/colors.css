@@ -37,21 +37,45 @@ body .container main section#colors form fieldset div.color-sample {
   box-shadow: 10px 10px 5px grey;
   margin: 20px 0;
 }
-body .container main section#colors form button {
+body .container main section#colors form div.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+body .container main section#colors form div.button button {
   height: 40px;
   font-size: 1.5em;
   border-radius: 15px;
   margin: 20px;
   padding: 0 10px;
   color: cornflowerblue;
-  background-color: darkblue;
+  background-color: #0a147d;
 }
-body .container main section#colors form button:last-child {
+body .container main section#colors form div.button button:last-child {
   color: #cbdbb3;
   background-color: #0f380f;
 }
-body .container main section#colors form button:hover {
+body .container main section#colors form div.button button:hover {
   transform: scale(110%);
+}
+body .container main section#colors form div.button button.reset {
+  background-color: white;
+  color: black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container main section#colors form div.button button.reset i {
+  transform: rotate(-90deg);
+}
+body .container main section#colors form div.button button.reset:hover {
+  cursor: pointer;
+  transform: scale(105%);
+}
+body .container main section#colors form div.button button.reset:hover i {
+  transition-timing-function: ease-in;
 }
 
 /*# sourceMappingURL=colors.css.map */

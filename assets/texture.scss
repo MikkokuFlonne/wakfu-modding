@@ -1,0 +1,77 @@
+body{
+    .container{
+        main{
+            display: flex;
+            justify-content: center;
+            section{
+                &#textures{
+                    display: flex;
+                    width: 80%;
+                    align-content: space-around;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    background-color: white;
+                    h2{
+                        font-size: 2em;
+                        text-align: center;
+                        width: 100%;
+                    }
+                    div{
+                        display: flex;
+                        width: 100%;
+                        align-content: space-around;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+
+                         figure{
+                             display: flex;
+                             flex-direction: column;
+                             align-items: center;
+                             justify-content: flex-end;
+                             max-width: 25%;
+                             img{
+                                 box-shadow: 0px 0px 20px 10px lightblue;
+                                 width: 100%;
+                             }
+                             figcaption{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 20px 0;
+                                button{
+                                    background-color: lightblue;
+                                    color: black;
+                                    padding: 5px 20px;
+                                    border-radius: 10px;
+                                    margin: 20px;
+                                    font-size: 1.3em;
+                                    border: none;
+                                    &:hover{
+                                        cursor: pointer;
+                                        transform:scale(110%)
+                                    }
+                                }
+                                
+                             }
+                        }
+                    }
+                    button{
+                        background-color: lightblue;
+                        color: black;
+                        padding: 5px 20px;
+                        border-radius: 10px;
+                        margin: 20px;
+                        font-size: 2em;
+                        border: none;
+                        &:hover{
+                            cursor: pointer;
+                            transform:scale(110%)
+                        }
+                    }
+                        
+                }
+            }
+        }
+    }
+}

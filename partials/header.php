@@ -1,5 +1,7 @@
 <?php
 require_once "./vendor/autoload.php";
+
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,11 +11,13 @@ require_once "./vendor/autoload.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bedc8cf35d.js" crossorigin="anonymous"></script>
-    <title>Tools identification <?php
+    <title>Wakfu Modding | <?php
                                 if (isset($title)) {
                                     echo $title;
                                 }
                                 ?></title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="./assets/style.css">
     <?php
     if (isset($style)) {
@@ -35,6 +39,7 @@ require_once "./vendor/autoload.php";
                 <ul>
                     <li><a href="./colors.php">Colors</a></li>
                     <li><a href="./pixmap.php">Pixmap</a></li>
+                    <li><a href="./texture.php">Texture Pack</a></li>
                 </ul>
             </nav>
 
