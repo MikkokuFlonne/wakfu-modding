@@ -39,6 +39,8 @@ if (!empty($_POST)) {
 
     if (isset($_POST['xml'])) {
         foreach ($_POST as $index => $hexa) {
+            if ($index == "xml")
+                continue;
             // dump($hexa);
             // dump($index);
             // dump($hexa['hexacode']);
